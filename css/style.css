@@ -88,7 +88,8 @@
         position: relative;
         height: 520px;
         width: 100%;
-        background-image: url("https://cdn.pixabay.com/photo/2019/09/11/02/23/hongkong-4467663_960_720.jpg");
+        /*background-image: url("https://cdn.pixabay.com/photo/2019/09/11/02/23/hongkong-4467663_960_720.jpg");*/
+        background-image: url("https://images7.alphacoders.com/737/thumb-1920-737400.jpg");
         background-size: cover;
     }
     
