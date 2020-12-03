@@ -28,6 +28,10 @@
         z-index: 100;
     }
     
+    .navbar-logo img {
+        height: 70px;
+    }
+    
     .item-navbar {
         padding-top: 15px;
         padding-bottom: 15px;
@@ -44,48 +48,6 @@
     
     .navbar #menu li:hover {
         background-color: rgba(10, 4, 4, 0.3);
-    }
-    /*SIDEBAR*/
-    
-    .sidebar {
-        display: none;
-        width: 230px;
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.95);
-        background: url('https://png.pngtree.com/thumb_back/fw800/background/20190223/ourmid/pngtree-solid-color-matte-gradient-blue-background-backgroundblue-gradient-background-image_84870.jpg');
-        background-size: cover;
-    }
-    
-    .sidebar-items {
-        text-align: center;
-    }
-    
-    .logo {
-        text-align: center;
-        padding-bottom: 10px;
-        margin-top: 10px;
-        color: white;
-        margin-bottom: 50px;
-    }
-    
-    .logo img {
-        height: 150px;
-        border: 5px solid;
-        border-color: #000000;
-    }
-    
-    .item {
-        font-size: 15px;
-        margin-bottom: 35px;
-        transform: scale(1);
-        transition: all 1s;
-    }
-    
-    .item:hover {
-        transform: scale(1.1);
-        transition: all 1s;
     }
     /*BANNER-COVER*/
     
@@ -138,68 +100,15 @@
     }
     /*COMPONENTS*/
     
-    .button {
-        border: solid;
-        border-radius: 4px;
-        border-width: 1px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-left: 20px;
-        padding-right: 20px;
-        text-align: center;
-        margin: 10px;
-        color: #ffffff;
-    }
-    
-    .btn-blue {
-        border-color: #0294A5;
-        background-color: #0294A5;
-    }
-    
-    .btn-blue:hover {
-        background-color: #10F3E2;
-    }
-    
-    .btn-light-blue {
-        border-color: #05ACD3;
-        background-color: #05ACD3;
-    }
-    
-    .btn-light-blue:hover {
-        background-color: #e6e91b;
-    }
-    
-    .btn-green {
-        border-color: #0bc0b1;
-        background-color: #0bc0b1;
-    }
-    
-    .btn-green:hover {
-        background-color: #85F03C;
-    }
-    
-    .btn-dark-purple {
-        border-color: #1f1641;
-        background-color: #1f1641;
-    }
-    
-    .btn-dark-purple:hover {
-        background-color: #AB47BC;
-        color: #FFFFFF;
-    }
-    
-    .btn-dark-blue {
-        border-color: #012172;
-        background-color: #012172;
-    }
-    
-    .btn-dark-blue:hover {
-        background-color: #764bec;
-    }
-    
     .btn-download {
         height: 40px;
-        border-color: #1f1641;
+        background-color: #fff;
+        border-radius: 4px;
+        border-width: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
         background-color: #1f1641;
     }
     
@@ -207,6 +116,13 @@
         margin: .7rem;
         background-color: white;
         border-radius: 0.25rem;
+        transform: scale(1);
+        transition: all 1s;
+    }
+    
+    .card:hover {
+        transform: scale(1.1);
+        transition: all 1s;
     }
     
     .header-card {
@@ -235,7 +151,7 @@
     .box-row {
         text-align: center;
         height: 35px;
-        margin-bottom: 12px;
+        margin-bottom: 15px;
         border-bottom: 1px solid rgba(8, 11, 168, 0.3);
         font-size: 15px;
     }
@@ -275,7 +191,7 @@
         color: #dc3545;
     }
     
-    .bg-green {
+    .green-tag {
         background-color: #20c997;
         border-radius: 4px;
         padding: 8px;
@@ -331,17 +247,30 @@
     
     @media(min-width: 992px) {
         .navbar {
+            width: 210px;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+        }
+        .navbar-logo {
+            margin-bottom: 30px;
+            height: 200px;
+        }
+        .navbar-logo img {
+            height: 100%;
+        }
+        .social-items {
             display: none;
         }
-        .sidebar {
-            display: inline-block;
+        .menu-bar {
+            display: none;
         }
-        .item {
-            margin-bottom: 40px;
-            font-size: 18px;
+        .items-navbar {
+            display: inline-block;
+            text-align: center;
         }
         .main {
-            margin-left: 230px;
+            margin-left: 210px;
         }
         .cover {
             height: 630px;
@@ -360,12 +289,58 @@
         }
         .box-row {
             text-align: left;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
         .text-center {
             text-align: center;
         }
         .font-medium {
             font-size: 40px;
+        }
+        .button {
+            display: inline-block;
+            width: 170px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .btn-blue {
+            border-color: #0294A5;
+            background-color: #0294A5;
+        }
+        .btn-blue:hover {
+            background-color: #10F3E2;
+        }
+        .btn-light-blue {
+            border-color: #05ACD3;
+            background-color: #05ACD3;
+        }
+        .btn-light-blue:hover {
+            background-color: #e6e91b;
+        }
+        .btn-green {
+            border-color: #0bc0b1;
+            background-color: #0bc0b1;
+        }
+        .btn-green:hover {
+            background-color: #85F03C;
+        }
+        .btn-dark-purple {
+            border-color: #1f1641;
+            background-color: #1f1641;
+        }
+        .btn-dark-purple:hover {
+            background-color: #AB47BC;
+            color: #FFFFFF;
+        }
+        .btn-dark-blue {
+            border-color: #012172;
+            background-color: #012172;
+        }
+        .btn-dark-blue:hover {
+            background-color: #764bec;
         }
     }
