@@ -28,6 +28,11 @@
         z-index: 100;
     }
     
+    .item-navbar {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
     #menu {
         width: 100%;
     }
@@ -257,6 +262,10 @@
         transition: all 1s;
     }
     /*HELPERS*/
+    
+    .dp-flex {
+        display: flex;
+    }
     
     .card-title {
         margin-bottom: 0.75rem;
