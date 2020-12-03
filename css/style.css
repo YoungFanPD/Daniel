@@ -30,6 +30,9 @@
     
     .navbar-logo img {
         height: 70px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: rgb(0, 0, 0);
     }
     
     .item-navbar {
