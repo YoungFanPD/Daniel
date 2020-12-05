@@ -229,10 +229,6 @@
         font-size: 50px;
     }
     
-    .font-small {
-        font-size: 24px;
-    }
-    
     .font-xsmall {
         font-size: 21px;
     }
@@ -354,5 +350,7 @@
         }
         .font-medium {
             font-size: 40px;
+        }
+    }       font-size: 40px;
         }
     }
