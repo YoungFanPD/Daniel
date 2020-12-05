@@ -42,6 +42,7 @@
     
     #menu {
         width: 100%;
+        transition: top 3s;
     }
     
     .navbar #menu li {
@@ -113,6 +114,10 @@
         padding-top: 15px;
         padding-bottom: 15px;
         background-color: #1f1641;
+    }
+    
+    .btn-download:hover {
+        background-color: #AB47BC;
     }
     
     .card {
